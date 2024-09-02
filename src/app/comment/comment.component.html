@@ -1,0 +1,47 @@
+<div class="h-full">
+    <div class="w-full h-[40%]" style="background-image: url(bg_image.svg); background-size: cover;">
+        <div class="h-full mx-auto flex flex-col justify-between p-5">
+
+            <div><img src="transparent_back_button.svg"></div>
+            <div class="flex justify-between text-[#ffffff]">
+                <div class="flex gap-2">
+                    <fa-icon class="!text-[#ffffff]" [icon]="share"></fa-icon><p>24</p>
+                </div>
+                <div class="flex gap-5">
+                    <div class="flex gap-2">
+                        <fa-icon class="!text-[#ffffff]" [icon]="heart"></fa-icon><p>500</p>
+                    </div>
+                    <div class="flex gap-2">
+                        <fa-icon class="!text-[#ffffff]" [icon]="comment"></fa-icon><p>23</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="h-[50%] overflow-auto px-5">
+        <div *ngFor="let i of comments">
+            <div class="flex items-center gap-3 py-5 my-3 rounded-md">
+                <div><img class="rounded-full" src="profile_image.svg"></div>
+                <div>
+                    <h1 class="text-[16] text-[#1A1B23] font-medium">
+                        Morsalin Nur
+                    </h1>
+                    <fa-icon [icon]="share"></fa-icon>
+                    <p class="text-[hsl(0,0%,57%)] text-[12]">
+                        52 minutes ago
+                    </p>
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing 
+                elit, sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi 
+                ut aliquip ex ea commodo consequat.
+            </p>
+            <mat-divider class="!border-[#EAEAEA]"></mat-divider>
+    
+        </div>
+    </div>
+</div>

@@ -1,0 +1,40 @@
+<div class="w-full h-full flex flex-col justify-center items-center gap-5">
+    <div class="w-[85%] h-[85%] md:w-[50%] py-5"> 
+        <div>
+            <img src="button _ back.svg">
+            <h1 class="text-center m-0 text-5xl font-medium mt-10">
+                Hello Again!
+            </h1>
+        </div>
+
+            <p class="text-center text-[#4A4A4A] mt-3">
+                Sign in to your account
+            </p>
+        
+            <form class="flex flex-col gap-3 py-5">
+        
+                    <div class="flex flex-col p-3 border-2  border-[#4DD969] rounded-lg">
+                        <label class="text-[#4DD969]">Email address</label>
+                        <input placeholder="info@yourmail.com">
+                    </div>
+                    <div  class="flex flex-col p-3 border-2  border-gray-300 rounded-lg">
+                        <label class="text-[#4DD969]">password</label>
+                        <input placeholder="Enter your password">
+                    </div>
+                    <p class="text-[#4DD969]">Forgot your password?</p>
+                    <div  class="w-[70%] text-center mx-auto rounded-md text-white text-base py-10">
+                        <a><img class="w-full" src="sign_in_button.svg"></a>
+                </div>            
+            </form>
+        
+            <div class="flex items-center justify-center my-8">
+                <div class="w-1/3 border-b border-gray-300 mx-2"></div>
+                <p class="mx-2">Or with</p>
+                <div class="w-1/3 border-b border-gray-300 mx-2"></div>
+            </div>
+    
+            <button mat-flat-button class="!bg-transparent !text-black !mb-3"><fa-icon [icon] = "faGoogle"></fa-icon>  Sign in with Google</button>      
+            <button mat-flat-button class="!bg-transparent !text-black"><fa-icon [icon] = "faTwitter"></fa-icon>  in with Twitter</button>      
+            <p class="my-10 text-center">Don’t have account? Let’s <a class="!text-[#4DD969]" href="/auth/sign-up">Sign up</a></p>
+        </div>
+    </div>

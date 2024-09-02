@@ -1,0 +1,40 @@
+<div class="w-full h-full py-10">
+    <div class="w-[90%] mx-auto pb-5 md:w-[50%]">
+        <div class="flex justify-between">
+            <div class="flex items-center gap-3 w-[40%]">
+                <div class="p-2 border-[#28CD56] border-2 rounded-full"><img src="profile_image.svg"></div>
+                <div>
+                    <h1 class="text-[16] font-medium">
+                        John Doe
+                    </h1>
+                    <p class="text-[#919191] text-[12]">
+                        johnDoe
+                    </p>
+                </div>
+            </div>
+            <div>
+                <a><img src="BG.svg"></a>
+            </div>
+        </div>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="w-[90%] md:w-[50%] mx-auto">
+            
+            <app-stat></app-stat>
+            <div class="flex flex-col gap-10 my-10">
+                <app-tile [title]= "'Notification'" [subTitle]="'See your recent activity'" [show] = "true" [value] = "'5'"></app-tile>
+                <app-tile [title]= "'Friends'" [subTitle]="'Friendlist totals'" [show] = "false" [value] = "'5'"></app-tile>
+                <app-tile [title]= "'Messages'" [subTitle]="'Message your friends'" [show] = "true" [value] = "'5'"></app-tile>
+                <app-tile [title]= "'Albums'" [subTitle]="'Save or post your albums'" [show] = "false" [value] = "'5'"></app-tile>
+                <app-tile [title]= "'Favorites'" [subTitle]="'Friends you love'" [show] = "false" [value] = "'5'"></app-tile>
+            </div>
+            
+        </div>
+        <mat-divider class="!bg-[#EEEEEE]"></mat-divider>
+        <div class="w-[90%] md:w-[50%] mx-auto">
+            <div class="py-10">
+                <app-tile [title]= "'Favorites'" [subTitle]="'Friends you love'" [show] = "false" [value] = "'5'"></app-tile>
+                <div class="py-5 mx-auto"><a><img class="mx-auto" src="logout.svg"></a></div>
+            </div>
+        </div>
+</div>

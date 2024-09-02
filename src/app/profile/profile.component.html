@@ -1,0 +1,38 @@
+<div class="md:w-[50%] mx-auto">
+    <div class="py-3 w-[90%] flex justify-between items-center">
+        <div>
+            <img src="button _ back.svg">
+        </div>
+        <p class="text-[18] font-medium text-[#1A1B23]">Profile</p>
+        <div class="flex gap-2 items-center">
+            <fa-icon class="!text-[#585858]" [icon]="faHeart"></fa-icon>
+            <fa-icon class="!text-[#585858]" [icon]="faSearch"></fa-icon>
+        </div>
+    </div>
+    <mat-divider class="!border-[#EAEAEA]"></mat-divider>
+    <div class="py-5 flex flex-col items-center gap-5">
+        <div class="p-1 w-[33%] rounded-full border-[#4DD969] border-2">
+            <img class="rounded-full w-full" src="profile_image.svg">
+        </div>
+        <div>
+            <h1 class="text-[16] font-medium">
+                John Doe
+            </h1>
+            <p class="text-[#919191] text-[12]">
+                johnDoe
+            </p>
+        </div>
+        <div><img src="fancy_divider.svg"></div>
+        <div class="flex">
+            <div><img src="message.svg"></div>
+            <div><img src="follow.svg"></div>
+        </div>
+        <app-stat></app-stat>
+    </div>
+    <mat-divider class="!border-[#EAEAEA]"></mat-divider>
+    <div class="py-5 w-[90%] overflow-x-auto flex gap-3">
+        <div class="min-w-[50%] rounded-md" *ngFor="let item of array">
+            <img src="tom_cruise.svg">
+        </div>
+    </div>
+</div>

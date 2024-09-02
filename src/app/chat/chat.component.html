@@ -1,0 +1,27 @@
+<div class="h-[100%] mx-auto py-3">
+    <div class="flex w-[90%] mx-auto justify-between items-center">
+        <div class="flex items-center">
+            <img src="button _ back.svg">
+            <div class="px-3">
+                <h1 class="text-[14] font-medium">
+                    John Doe
+                </h1>
+                <p class="text-[#919191] text-[12]">
+                    Last active: 10 sec ago
+                </p>
+            </div>
+        
+        </div>
+        <a><img src="Button - Voice Call.svg"></a>
+    </div>
+    <mat-divider class="!border-[#EAEAEA]"></mat-divider>
+    <div class="h-[70%] w-[90%] mx-auto overflow-y-auto">
+        chat body
+        <app-message [profileImage]="'profile_image.svg'" [message]="'I’m fine, i’m thinking about new project. I want to open an online store'"></app-message>
+    </div>
+    <mat-divider class="!border-[#EAEAEA]"></mat-divider>
+    <div class="w-[90%] mx-auto flex sticky bottom-0 justify-between items-center mt-3 ">
+        <div class="p-3 w-[80%] rounded-md border-[#EAEAEA] border-2"><input class="focus:outline-none" type="text" placeholder="Say something"></div>
+        <img src="Button - Send.svg">
+    </div>
+</div>

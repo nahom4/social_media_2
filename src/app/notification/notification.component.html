@@ -1,0 +1,27 @@
+<div class="py-5">
+    <div class="w-[90%] mx-auto">
+        <div class="flex justify-between items-center">
+            <div class="p-2 border-[#28CD56] border-2 rounded-full"><img src="profile_image.svg"></div>
+            <div>
+                <fa-icon class="!text-[#585858]" [icon]="faSearch"></fa-icon>
+            </div>
+        </div>
+        <div class="my-3 flex items-center gap-2">
+            <h2 class="font-medium text-lg">Notification</h2>
+            <div class="px-1 rounded-full text-white flex items-center justify-center bg-gradient-to-r from-customGreenStart to-customGreenEnd">{{count}}</div>
+        </div>
+    
+    </div>
+    <mat-divider class="!border-[#EEEEEE]"></mat-divider>
+    
+    <div class="w-[90%] flex flex-col mx-auto items-center">
+        <div class="flex justify-between my-3 w-full">
+            <a>show all</a>
+            <a>Mark all as read</a>
+        </div>
+    
+        <div *ngFor="let i of notifications" class="flex flex-col items-center w-full">
+            <app-notification-tile [name] = "'Arthur Aguilar'" [time] = "'2h ago'" [message] = "'Liked your photo'"></app-notification-tile>
+        </div>
+    </div>
+</div>
